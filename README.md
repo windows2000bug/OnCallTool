@@ -15,8 +15,11 @@ OS: Developed on Red Hat Linux 7, not tested with another OS
 6) Create a mysql user like call4help, create a database called oncall, and give call4help permissions to oncall.
 7) Important the Database structure: i.e. mysql -u call4help -p oncall < structure.sql (note bug  #2)
 8) Start and enable the httpd and mysql services.
-9) This is all off the cuff and I have validated these instructions, please let me know if there is a problem and I will modify the instructions.
+9) Copy in your own company logo.png into images/
 10) doc.txt includes a little bit of instructions on how to use the tool.
+
+
+Note: This is all off the cuff and I haven't validated these instructions, please let me know if there is a problem and I will modify the instructions.
 
 
 # Known Bugs
