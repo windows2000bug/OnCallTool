@@ -1,0 +1,17 @@
+    #To grant people admin access, add them to an AD group in.
+    #An error in this can generate a 500 error on the admin site.
+
+
+#    AuthName "LDAP Authentication"
+#    AuthType Basic
+#    AuthBasicProvider ldap
+
+#    AuthLDAPBindDN "call4help@example.local"
+#    AuthLDAPBindPassword myPassword
+
+#    AuthLDAPURL ldap://10.1.2.3:389/dc=example,dc=local?sAMAccountName?sub?(objectClass=*)
+
+
+    #Added additional groups Full DN below with "Require ldap-Group" in front of it
+#    Require ldap-group CN=call4help_admin,OU=Groups,DC=example,DC=local
+#    Require ldap-user
