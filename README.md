@@ -29,4 +29,4 @@ Note: This is all off the cuff and I haven't validated these instructions, pleas
 
 # Examples
 
-<img src="../../images/oncallScreen.PNG">
+<img src="images/oncallScreen.PNG">
