@@ -29,4 +29,17 @@ Note: This is all off the cuff and I haven't validated these instructions, pleas
 
 # Examples
 
+On Call Operator View (everyone):
 <img src="images/oncallScreen.PNG">
+
+Calendar Configuration (admin):
+<img src="images/calendar.PNG">
+
+Teams Setup (admin):
+<img src="images/teams.PNG">
+
+User Setup (admin):
+<img src="images/users.PNG">
+
+Optional Application/Item Relationships (admin):
+<img src="images/apps.PNG">
