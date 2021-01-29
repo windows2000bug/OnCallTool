@@ -1,0 +1,33 @@
+	<br><br><br><br><br>
+	<table border=0 width=100%>
+		<tr>
+			<td width=151>
+				
+			</td>
+			<td>
+				<table border=0>
+					<tr>
+						<td width=400>
+						</td>
+						<td width=38%></td>
+						<td align=left>
+                                                	<?php
+							$doc="<a href=doc.txt>Documentation</a>";
+							if (preg_match('/.*admin/',$_SERVER['REQUEST_URI'])) {
+                                                                $site='<a href="../">Operator Site</a>';
+                                                        } else {
+								$site='<a href="admin">Admin Site</a>';
+                                                        }
+							echo "$doc | $site";
+                                                        ?>
+
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+	</table>
+
+        </body>
+</html>

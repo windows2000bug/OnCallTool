@@ -1,0 +1,85 @@
+        <body>
+                <table border=0 width=100%>
+                        <tr>
+                                <td width=10% valign=top>
+                                        <a href="/"><img border=0 src="/images/logo.png"></a>
+                                </td>
+                                <td align=left>
+                                        <table border=0 >
+						<tr>
+							<td colspan=1 width=400><font size=6><b>On Call Schedule</b></font></td>
+							<td width=10%></td>
+							<td width=25%>
+								<table border=0>
+									<tr>
+   			                                        	        <td><img src="/images/spain.jpg"><b> CET: </b> </td>
+                        		                	                <td>
+                                        			                        <?php
+                                        	                		                date_default_timezone_set("Europe/Madrid");
+                                	                                        		echo date('H:i', time());
+		        	                                                        ?>
+                			                                        </td>
+									</tr>
+									<tr>
+                                                			        <td>
+                                                	                		<img src="/images/usa.jpg"><b> EST: </b>
+		                        	                                </td>
+                			                                        <td>
+                        	        		                                <?php
+                	                                		                        date_default_timezone_set("America/New_York");
+        	                                                        		        echo date('H:i', time());
+		                                                	                ?>
+                		                        	                </td>
+									</tr>
+									<tr>
+                                                                                <td>
+                                                                                        <img src="/images/usa.jpg"> <b> PST: </b>
+                                                                                </td>
+                                                                                <td>
+                                                                                        <?php
+                                                                                                date_default_timezone_set("America/Los_Angeles");
+                                                                                                echo date('H:i', time());
+                                                                                        ?>
+                                                                                </td>
+                                                                        </tr>
+
+								</table>
+							</td>
+						</tr>
+                                                <tr align=left>
+							<td>
+								<table border=0 width=100%>
+									<tr>	
+                        		                	                <td valign=bottom><font size=4><b><br><a href="index.php">On Call</a></b></font></td>
+										<td valign=bottom><font size=4><b><a href="cal.php">Calendar</a></b></font></td>
+			                                                        <td valign=bottom><font size=4><b><a href="users.php">Users</a></b></font></td>
+										<td valign=bottom><font size=4><b><a href="apps.php">Applications</a></b></font></td>
+										<?php
+										if (preg_match('/.*admin/',$_SERVER['REQUEST_URI'])) {
+											echo "<td width=20% valign=bottom><font size=4><b><a href=\"teams.php\">Teams</a></b></font></td>";
+											$admin="<font color=red size=4><b>Admin Site!</b></font>";
+										} else {
+											echo "<td  width=20% valign=bottom></td>";
+											$admin="<font size=4><b>Operator Site</b></font>";
+										}
+                                        			                ?>
+									</tr>
+								</table>
+							</td>
+							<td width=38%></td>
+							<td valign=bottom>
+                                                                <?php
+                                                                        echo "$admin";
+                                                                ?>
+
+                                                        </td>
+
+                                                </tr>
+                                        </table>
+                                </td>
+                        </tr>
+
+                </table>
+
+<br><br><br>
+

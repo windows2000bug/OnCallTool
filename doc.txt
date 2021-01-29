@@ -1,0 +1,48 @@
+
+
+Welcome to the new On Call tool. The site is split into two sites:
+
+    Operator Site
+    Admin Site
+
+Switching between sites can be done by clicking on the Admin Site/Operator Site Link the bottom right of the page
+Operator Site
+
+This site provides an read only view for operators and anyone who wants to know The operator site has the following pages:
+
+    On Call
+        Quick dash board with the data most people will need.
+        This page gives a list of people who are currently on call, at that moment. The page is set to refresh every minute, so the data does not become stale
+        There is a search function that gives mutually exclusive search functions of teams and applications.
+    Calendar
+        Shows a list of all groups for who is currently on call to who is scheduled to be on call in the future. 
+        There is a search function that allows you to filter it out by group, user, and date. These search items can be used together or separately. 
+    Users
+        Shows a list of users, their phone numbers, and the team they are associated with.
+    Applications
+        Shows a list of applications and their associated team and criticality
+
+ 
+Admin Site
+
+This site provides restricted write access for the on call tool. The site users your Domain credentials, use only your username, do not add a domain prefix: 
+
+    Correct: username
+    Incorrect: domain\usersname
+
+
+    On Call
+        This site is identical to the Operator site, please refer to the details listed in the previous section
+    Calendar
+        This is a more advance version of the Operator site. Admins can add, update, and delete schedules for various teams. As listed on the page the team is a required field for the Admin site!
+        Please note that you can only modify one line at a time. If you try to update more than one, then only the field that you clicked "update" on will update.
+        Please note that the date drop down will only work with adding new calls in IE. The Date drop down works fine for updating in Chome. You can still modify the dates in IE, though you will make sure it is formatted properly so it matches other dates.
+    Users
+        Shows a list of users, their phone numbers, and the team they are associated with.
+        Order is a feature that is not yet implemented, so please ignore it. 
+        If you need people to manage more than one queue you will have to select the parent Team as their team in users. Please refer to the Team's section for more information.
+    Applications
+        Shows a list of applications and their associated team and criticality
+    Teams
+        Create teams for users to be associated with.
+        As some teams manage more than one queue, we have to create a parent to manage the multiple queues. To do this create a parent team, then associate each child team with the parent. Make sure you assign the users to the parent team for it to show up properly. In most cases most teams will only be associated with one team and not have to worry about this.
