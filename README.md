@@ -27,19 +27,19 @@ Note: This is all off the cuff and I haven't validated these instructions, pleas
 2) Empty Database. There is a bug where it prevents you from adding users and groups properly, if there are none. I never tested this tool from an empty DB, until I decided to post it to gitHub and I purged the DB. The work around is to leave the example users and groups in place, then add a couple of new users and teams. After you add those new users and teams, you can remove the examples. 
 3) Some parts of the tool can't have more than one line modified at a time. If you modify more than one line, you risk losing changes from the other lines you changed.
 
-# Examples
 
-On Call Operator View (everyone):
+
+# On Call Operator View (everyone):
 <img src="images/oncallScreen.PNG">
 
-Calendar Configuration (admin):
+# Calendar Configuration (admin):
 <img src="images/calendar.PNG">
 
-Teams Setup (admin):
+# Teams Setup (admin):
 <img src="images/teams.PNG">
 
-User Setup (admin):
+# User Setup (admin):
 <img src="images/users.PNG">
 
-Optional Application/Item Relationships (admin):
+# Optional Application/Item Relationships (admin):
 <img src="images/apps.PNG">
